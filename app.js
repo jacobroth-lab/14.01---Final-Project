@@ -36,4 +36,9 @@ app.use(function(err, req, res, next) {
   res.render('error');
 });
 
+app.use((err, req, res, next) => {
+  console.error(err.stack);
+  res.status(500).render('error', { message: 'We are currently experiencing technical difficulties. Please try again later.' });
+});
+
 module.exports = app;
