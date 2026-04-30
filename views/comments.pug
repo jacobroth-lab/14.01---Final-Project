@@ -20,5 +20,15 @@ block content
     section.comments-lsit 
         h2 Recent Comments 
         each comment in comments 
-            h4= comment.name 
-            p= comment.comment 
+            article.comment
+                .comment-header
+                    h4= comment.name 
+                    small.date = new Date(comment.created.at).toLocalDateString()
+                p= comment.comment 
+        .pagination
+            if currentPage > 1
+                a(href='/comments?page=' + (currentPage - 1)) Previous
+            span Page #{currentPage} of #{totalPages}
+
+            if currentPage < totalPages
+                a(href='/comments?pages=' + (currentPage + 1)) Next
