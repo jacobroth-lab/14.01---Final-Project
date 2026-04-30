@@ -44,4 +44,60 @@ em {
   color: var(--cool-gray);
 }
 
+.menu-card, .comment { 
+  background-color: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 24px;
+  margin-bottom: 20px;
+}
 
+.button {
+  display: inline-block;
+  background-color: var(--dark-green);
+  color: var(--seasalt);
+  padding: 12px 24px;
+  border-radius: 6px;
+  font-weight: bold;
+}
+.button:hover { 
+  background-color: #1a422f;
+}
+.button-saffron { 
+  background-color: var(--saffron);
+  color: var(--dark-green);
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.comment-header { 
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 8px;
+}
+
+.date {
+  color: var(--cool-gray);
+}
+
+.hero { 
+  padding: 60px 20px;
+  text-align: center;
+  background-color: #fff;
+  border-bottom: 2px solid var(--saffron);
+}
+
+.hero h1 { 
+  margin-bottom: 10px;
+}
+
+.hero p.lead { 
+  color: var(--cool-gray);
+  max-width: 600px;
+  margin: 0 auto 30px auto;
+}
