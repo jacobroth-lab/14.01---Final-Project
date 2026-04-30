@@ -32,3 +32,9 @@ block content
 
             if currentPage < totalPages
                 a(href='/comments?pages=' + (currentPage + 1)) Next
+        script. 
+            document.querySelector('form').addEventListener('submit', function() {
+                const btn = this.querySelector('button[type="submit"]');
+                btn.disabled = true;
+                btn.innerText = 'Posting...';
+            });
