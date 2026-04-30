@@ -1,8 +1,47 @@
-body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Italianno&family=Montserrat:wght@400&display=swap');
+
+:root { 
+  --font-heading: 'Italianno', cursive; 
+  --font-body: 'Montserrat', sans-serif;
+
+  --dark-green: #10291D;
+  --saffron: #F7C64A;
+  --seasalt: #F7F7F7;
+  --cool-gray: #8B8C89;
+
 }
 
-a {
-  color: #00B7FF;
+body{
+  font-family: var(--font-body);
+  background-color: var(--seasalt);
+  color: #000000;
 }
+
+.dark-section { 
+  background-color: var(--dark-green);
+  color: var(--seasalt);
+}
+
+h1, h2, h3, h4, h5, h6 { 
+  font-family: var(--font-heading);
+  font-weight: 400;
+}
+
+p, li, a { 
+  font-family: var(--font-body);
+  font-weight: 400;
+}
+
+em { 
+  font-style: italic;
+}
+
+.divider { 
+  border-top: 2px solid var(--saffron);
+}
+
+.tertiary-text { 
+  color: var(--cool-gray);
+}
+
+
