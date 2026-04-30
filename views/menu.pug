@@ -2,22 +2,24 @@ extends layout
 
 block content 
     section.menu-header 
-        h1 Downtown Donuts Menu 
-        p Homemade fresh Donuts and Pastries every morning with premium coffee.
+        .container
+            h1 Downtown Donuts Menu 
+            p Homemade fresh Donuts and Pastries every morning with premium coffee.
     
     section.menu-categories
-        .category-card
+        .menu-card
             h2 Signature Donuts 
             p Classical GLazed, Maple Bacon, Boston Cream, and more.
-        .category-card
+        .menu-card
             h2 Coffee & Drinks
             p Locally roasted beans, Espresso, and more staples.
-        .category-card
+        .menu-card
             h2 Breakfest Bites 
             p Egg & Cheese Croissant, Bacon Breakfast Sandwich, Avocado Toast, and Yogurt Parfait. 
  
     section.menu-actions 
         h3 Ready to Order?
-        a.button(href='https://www.doordash.com/', targets='_blank') Order on DoorDash 
-        a.button(href='https://www.ubereats.com/', targets='_blank') Order on UberEats 
+
+        a.button(href='https://www.doordash.com/', target='_blank') Order on DoorDash 
+        a.button(href='https://www.ubereats.com/', target='_blank') Order on UberEats 
 
