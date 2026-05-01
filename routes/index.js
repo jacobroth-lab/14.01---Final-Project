@@ -42,7 +42,7 @@ router.post('/comments', (req, res, next) => {
   if ( comment.length > 1000){
   return res.status(400).send('Comment is too long! Please keep it under 1000 characters.');
   }
-  req.db.query('INSERT INTO comments (name, comment) VALUES (?, ?);', [name, comment], (err, results) => {
+  req.db.query('INSERT INTO comments (name, comment_text) VALUES (?, ?);', [name, comment], (err, results) => {
     if (err) return res.status(500).send('Error posting comment');
     res.redirect('/comments');
   });
