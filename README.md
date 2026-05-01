@@ -15,6 +15,15 @@ To set up and install the database you need to run the `install_db.sh` script in
 ```bash
 ./setup_scripts/install_db.sh
 ```
+
+Switch to unix_socket authentication [Y/n] n
+Change the root password? [Y/n] Y
+Set the password to 12345
+Remove anonymous users? [Y/n] Y
+Disallow root login remotely? [Y/n] Y
+Remove test database and access to it? [Y/n] Y
+Reload privilege tables now? [Y/n] Y
+
 # Creating Database Tables
 
 Create the initial tables by running the following command:
