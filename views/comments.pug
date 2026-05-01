@@ -24,7 +24,7 @@ block content
                 .comment-header
                     h4= comment.name 
                     small.date= new Date(comment.created_at).toLocaleDateString()
-                p= comment.comment 
+                p= comment.comment_text
         .pagination
             if currentPage > 1
                 a(href='/comments?page=' + (currentPage - 1)) Previous
