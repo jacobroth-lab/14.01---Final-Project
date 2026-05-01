@@ -13,7 +13,7 @@ block content
         
             .form-group 
                 label(for='comment') Your Comment: 
-                textarea(id='comment', id='comment', rows='5', required)
+                textarea(id='comment', name='comment', rows='5', required)
             
             button.button(type='submit') Post Comment 
     
@@ -23,7 +23,7 @@ block content
             article.comment
                 .comment-header
                     h4= comment.name 
-                    small.date = new Date(comment.created_at).toLocalDateString()
+                    small.date= new Date(comment.created_at).toLocaleDateString()
                 p= comment.comment 
         .pagination
             if currentPage > 1
