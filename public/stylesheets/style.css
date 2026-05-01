@@ -36,8 +36,27 @@ em {
   font-style: italic;
 }
 
+.nav-container { 
+  display: flex;
+  align-items: center;
+  background-color: #ffffff;
+  color: var(--seasalt);
+  padding: 10px 20px;
+  list-style: none;
+  gap: 20px;
+  justify-content: flex-start;
+}
+.nav-container li:first-child { 
+  margin-right: auto;
+}
+.nav-container li a {
+  color: #333;
+  text-decoration: none;
+  font-weight: bold;
+}
 .divider { 
   border-top: 2px solid var(--saffron);
+  margin-top: 0;
 }
 
 .tertiary-text { 
@@ -107,8 +126,8 @@ a:focus, button:focus, input:focus, textarea:focus {
 }
 
 .logo img {
-  height: 50px;
-  width: auto;
-  vertical-align: middle;
   margin-right: 20px;
+  height: 200px;
+  display: block;
+  width: auto;
 }
