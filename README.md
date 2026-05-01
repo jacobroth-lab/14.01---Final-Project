@@ -1,11 +1,45 @@
 # CS208 Full Stack Final Project
 
-## Documentation
+- Name: Jacob Roth
+- Github: https://github.com/jacobroth-lab
+- Term: Spring 2026
 
-- Running the example project is documented [here](docs/example_project.md)
-- An example README is provided [here](docs/README_example.md)
+# Project Details
 
-Students must **replace** this README with a README that is specific to your
-project. **IMPORTANT**: If you do not complete the README, your project will not
-be graded, and you will receive a zero. The TA will not guess how to set up,
-configure, and run your project.
+This project aims to build on upon the request of building a page for Downtown Donuts that is trying to increase the amount of users and allows easy access to doordash and ubereats. This depends heavily on the sql database and needs the following steps in order to run this project.
+
+# How to Install Database
+
+To set up and install the database you need to run the `install_db.sh` script in the terminal. This script will install MariaDB and start the server running.
+
+```bash
+./setup_scripts/install_db.sh
+```
+# Creating Database Tables
+
+Create the initial tables by running the following command:
+
+```bash
+sudo mysql -u root -p < ./setup_scripts/create_demo_table.sql
+```
+
+# Install Dependencies
+
+Install the required dependencies using npm:
+
+```bash
+npm install
+```
+
+# Run the Application
+
+Start the application using the following command:
+
+```bash
+npm start
+```
+
+# Access the Application
+
+On Codespaces, you can access the application by forwarding port 3000. Open the
+forwarded port in your browser to view the application.
